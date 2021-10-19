@@ -13,27 +13,15 @@ $upload_path =  $uploads['baseurl'];
 	?>
 <img  class="img-fluid cover-image m-auto" src="<?php echo $upload_path ?>/2021/06/Art-FlattenedFlowers09-507x640-1.jpg">
 </div>
-<p class="text-right art-credit"><em>&ldquo;whitethorn project: flattened whitethorn bouquet study no. 5,”</em><br><a href="" target="_blank">Leigh Ann Beavers</a>, collage, relief print, watercolor. </p>
-<!--
-<div class="row volumeIssue">
-	<div class="col-4 text-center">
-		<span>Volume 70</span>
-	</div>
-	<div class="col-4 text-center">
-		<span>Number 1<span>
-	</div>
-	<div class="col-4 text-center">
-		<span>Fall 2020</span>
-	</div>
-</div>
--->
+<p class="text-right art-credit"> </p>
+
 </section>
 
 <section class="container TOCsection">
 
 	<div class="row">
 		<div class="col-md-8 offset-md-2 single-space-paragraphs">
-	<p><a href="https://shenandoahliterary.org/702/editors-note/">Editor&rsquo;s Note</a><br /><span class="author_name">Beth Staples</span></p>
+	<p><a href="https://shenandoahliterary.org/711/editors-note/">Editor&rsquo;s Note</a><br /><span class="author_name">Beth Staples</span></p>
 		</div>
 	</div>
 <p>&nbsp;</p>
@@ -42,9 +30,7 @@ $upload_path =  $uploads['baseurl'];
 <div class="row">
 	<div class="col-md-4 offset-md-1 TOC-column-1">
 
-		<h3>Nonfiction<br>
-		guest edited by<br>
-		DW McKinney</h3>
+		<h3>Nonfiction</h3>
 		<div>
 			<?php
 			remove_all_filters('posts_orderby');
@@ -395,9 +381,7 @@ foreach ($authornames as $author_id=>$author_lastname) { ?>
 
 	</div> <!-- close column -->
 	<div class="col-md-4 offset-md-1">
-		<h3>Comics<br>
-		guest edited by<br>
-		Rachelle Cruz</h3>
+		<h3>Comics</h3>
 			<div>
 				<?php
 				remove_all_filters('posts_orderby');
