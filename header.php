@@ -29,17 +29,17 @@
 
 			<section class="topbanner-noborder container-fluid" id="typelogo-container">
 				<div class="row">
-								<a href="https://shenandoahliterary.org/702/" class="img-fluid-link" rel="home" itemprop="url"><img width="1600" height="228" src="https://shenandoahliterary.org/681/files/2018/12/Shenandoah-1600.jpg" class="img-fluid" alt="Shenandoah Volume 68, Number 1" itemprop="logo" srcset="https://shenandoahliterary.org/681/files/2018/12/Shenandoah-1600.jpg 1600w, https://shenandoahliterary.org/681/files/2018/12/Shenandoah-1600-300x43.jpg 300w, https://shenandoahliterary.org/681/files/2018/12/Shenandoah-1600-768x109.jpg 768w, https://shenandoahliterary.org/681/files/2018/12/Shenandoah-1600-1024x146.jpg 1024w" sizes="(max-width: 1600px) 100vw, 1600px" /></a>
+								<a href="https://shenandoahliterary.org/711/" class="img-fluid-link" rel="home" itemprop="url"><img width="1600" height="228" src="https://shenandoahliterary.org/681/files/2018/12/Shenandoah-1600.jpg" class="img-fluid" alt="Shenandoah Volume 68, Number 1" itemprop="logo" srcset="https://shenandoahliterary.org/681/files/2018/12/Shenandoah-1600.jpg 1600w, https://shenandoahliterary.org/681/files/2018/12/Shenandoah-1600-300x43.jpg 300w, https://shenandoahliterary.org/681/files/2018/12/Shenandoah-1600-768x109.jpg 768w, https://shenandoahliterary.org/681/files/2018/12/Shenandoah-1600-1024x146.jpg 1024w" sizes="(max-width: 1600px) 100vw, 1600px" /></a>
 				</div>
 				<div class="row">
 		<div class="col offset-md-1">
-			<p id="typelogo"><a href="https://shenandoahLiterary.org/702/">Shenandoah</a></p>
+			<p id="typelogo"><a href="https://shenandoahLiterary.org/711/">Shenandoah</a></p>
 		</div>
 		</div>
 		<div class="row metadata-row d-flex justify-content-between">
 			<div class="col offset-md-1">
 				<div class="volumeIssueBanner">
-				<span class="">Volume 70, Number 2 &middot; Spring 2021</span>
+				<span class="">Volume 71, Number 1 &middot; Fall 2021</span>
 				</div>
 		</div>
 			<div class="col-5">
