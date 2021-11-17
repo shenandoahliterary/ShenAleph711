@@ -329,13 +329,6 @@ foreach ($authornames as $author_id=>$author_lastname) { ?>
 
 	</div> <!-- close column -->
 	<div class="col-md-4 offset-md-1">
-		<h3>Comics</h3>
-			
-
-			<p>&nbsp;</p>
-
-
-
 		<h3>Poetry</h3>
 		<div>
 
@@ -423,32 +416,7 @@ foreach ($authornames as $author_id=>$author_lastname) { ?>
 
 		</div>
 <p>&nbsp;</p>
-		<h3>Conversation</h3>
-		<div>
-			<?php
-			remove_all_filters('posts_orderby');
-			$novel_excerpt_args = array(
-				'category_name' => 'conversation',
-				'order' => 'ASC',
-				'meta_key' => 'TOC_order',
-				'orderby' => 'meta_value_num',
-				'meta_type' => 'NUMERIC',
-				'nopaging' => 'true',
 
-			);
-			$novel_excerpt_loop = new WP_Query($novel_excerpt_args);
-					while ($novel_excerpt_loop->have_posts()) : $novel_excerpt_loop->the_post();
-					 ?>
-					<p>	<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a><br />
-
-						<span class="author_name"><?php the_author();  ?></span>
-
-				</p>
-			<?php endwhile;
-	wp_reset_postdata();
-			?>
-
-		</div>
 
 
 
@@ -459,8 +427,8 @@ foreach ($authornames as $author_id=>$author_lastname) { ?>
 
 <div class="row">
 	<div class="col-md-8 offset-md-2 single-space-paragraphs">
-	<p><a href="https://shenandoahliterary.org/702/masthead/">Masthead</a></p>
-<p><a href="https://shenandoahliterary.org/702/contributors/">List of Contributors</a></p>
+	<p><a href="https://shenandoahliterary.org/711/masthead/">Masthead</a></p>
+<p><a href="https://shenandoahliterary.org/711/contributors/">List of Contributors</a></p>
 
 
 	</div>
