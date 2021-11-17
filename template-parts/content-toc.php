@@ -21,7 +21,7 @@ $upload_path =  $uploads['baseurl'];
 
 	<div class="row">
 		<div class="col-md-8 offset-md-2 single-space-paragraphs">
-	<p><a href="https://shenandoahliterary.org/711/editors-note/">Editor&rsquo;s Note</a><br /><span class="author_name">Beth Staples</span></p>
+	<p><a href="https://shenandoahliterary.org/711/editors-note/">Editor&rsquo;s Note</a><br /><span class="author_name">Brenna Womer, Beth Staples</span></p>
 		</div>
 	</div>
 <p>&nbsp;</p>
@@ -293,15 +293,7 @@ foreach ($authornames as $author_id=>$author_lastname) { ?>
 		</div>
 <p>&nbsp;</p>
 		<h3>Comics</h3>
-
-<p>&nbsp;</p>
-
-
-
-	</div> <!-- close column -->
-	<div class="col-md-4 offset-md-1">
-		<h3>Comics</h3>
-			<div>
+		<div>
 				<?php
 				remove_all_filters('posts_orderby');
 				$comics_args = array(
@@ -331,6 +323,14 @@ foreach ($authornames as $author_id=>$author_lastname) { ?>
 
 				?>
 			</div>
+<p>&nbsp;</p>
+
+
+
+	</div> <!-- close column -->
+	<div class="col-md-4 offset-md-1">
+		<h3>Comics</h3>
+			
 
 			<p>&nbsp;</p>
 
