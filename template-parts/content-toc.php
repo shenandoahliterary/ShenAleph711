@@ -68,7 +68,7 @@ $upload_path =  $uploads['baseurl'];
 					endwhile;
 
 
-		//below groups posts by author
+		//group posts by author
 
 				foreach ($authornames as $author_id=>$author_lastname) {
 					$args = array(
@@ -103,8 +103,18 @@ $upload_path =  $uploads['baseurl'];
 						<?php } ?>
 
 					<?php
+//check for author's note
+$has_author_note = $custom_fields['has_author_note'];
+if (! empty($has_author_note)) {
+	echo "$has_author_note[0] <br />"
+}
 					$i++;
 				endwhile;
+				
+
+
+
+
 				//print author outside of the loop
 				?>
 				<span class="author_name"><?php the_author(); ?> </span>
