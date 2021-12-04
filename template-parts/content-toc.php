@@ -106,7 +106,7 @@ $upload_path =  $uploads['baseurl'];
 //check for author's note
 $has_author_note = $custom_fields['has_author_note'];
 if (! empty($has_author_note)) {
-	echo "$has_author_note[0] <br />";
+	echo "Author's Note $has_author_note[0] <br />";
 }
 					$i++;
 				endwhile;
