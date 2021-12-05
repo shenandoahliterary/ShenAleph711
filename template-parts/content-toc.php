@@ -106,7 +106,7 @@ if (! empty($has_author_note)) {
 echo <<<URLLINK
 <a href="$author_note_url/$has_author_note[$i]/">Author's Note</a><br />
 URLLINK;
-
+wp_reset_postdata();
 }
 					$i++;
 				endwhile;
