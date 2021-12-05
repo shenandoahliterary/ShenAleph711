@@ -388,38 +388,7 @@ foreach ($authornames as $author_id=>$author_lastname) { ?>
 			?>
 		</div>
 <p>&nbsp;</p>
-		<h3>Comics</h3>
-		<div>
-				<?php
-				remove_all_filters('posts_orderby');
-				$comics_args = array(
-					'category_name' => 'comics',
-					'order' => 'ASC',
-					'meta_key' => 'TOC_order',
-					'orderby' => 'meta_value_num',
-					'meta_type' => 'NUMERIC',
-					'nopaging' => 'true',
-				);
-					$comics_loop = new WP_Query($comics_args);
-					//WP_Query('cat=7&orderby=meta_value&meta_key=author_lastname&order=asc&nopaging=true');
 
-
-						while ($comics_loop->have_posts()) : $comics_loop->the_post();
-						 ?>
-						<p>
-							<a href="<?php the_permalink(); ?>">
-							<?php the_title(); ?>
-						</a><br />
-						<span class="author_name"><?php the_author(); ?> </span><br />
-						<?php shenAleph_filter_second_author(); ?>
-
-					</p>
-				<?php endwhile;
-	wp_reset_postdata();
-
-				?>
-			</div>
-<p>&nbsp;</p>
 
 
 
@@ -513,7 +482,38 @@ foreach ($authornames as $author_id=>$author_lastname) { ?>
 		</div>
 <p>&nbsp;</p>
 
+<h3>Comics</h3>
+		<div>
+				<?php
+				remove_all_filters('posts_orderby');
+				$comics_args = array(
+					'category_name' => 'comics',
+					'order' => 'ASC',
+					'meta_key' => 'TOC_order',
+					'orderby' => 'meta_value_num',
+					'meta_type' => 'NUMERIC',
+					'nopaging' => 'true',
+				);
+					$comics_loop = new WP_Query($comics_args);
+					//WP_Query('cat=7&orderby=meta_value&meta_key=author_lastname&order=asc&nopaging=true');
 
+
+						while ($comics_loop->have_posts()) : $comics_loop->the_post();
+						 ?>
+						<p>
+							<a href="<?php the_permalink(); ?>">
+							<?php the_title(); ?>
+						</a><br />
+						<span class="author_name"><?php the_author(); ?> </span><br />
+						<?php shenAleph_filter_second_author(); ?>
+
+					</p>
+				<?php endwhile;
+	wp_reset_postdata();
+
+				?>
+			</div>
+<p>&nbsp;</p>
 
 
 
