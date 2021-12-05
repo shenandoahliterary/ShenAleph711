@@ -107,7 +107,8 @@ $upload_path =  $uploads['baseurl'];
 $custom_fields = get_post_custom();
 $has_author_note = $custom_fields['has_author_note'];
 if (! empty($has_author_note)) {
-	echo "Author's Note $has_author_note[$i] <br />";
+	$author_note_url = site_url();
+	echo "Author's Note $has_author_note[$i] $url <br />";
 }
 					$i++;
 				endwhile;
