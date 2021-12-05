@@ -96,11 +96,15 @@ $upload_path =  $uploads['baseurl'];
 
 
 					<?php
+					/*
 					if ($i == 0) { ?>
 
 
 
-						<?php } ?>
+						<?php } 
+						*/
+						?>
+
 
 					<?php
 //check for author's note
