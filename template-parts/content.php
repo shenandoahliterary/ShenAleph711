@@ -23,7 +23,14 @@
 				Trigger Warning
 			  </button>
 TRIGGER;
-				echo "<span class='prize'>$trigger_warning[0]</span>";
+				echo "<span class='prize'></span>";
+				echo <<<TRIGGERWARNINGTEXT
+				<div class="collapse" id="collapseExample">
+				<div class="card card-body">
+				$trigger_warning[0];
+				</div>
+</div>
+TRIGGERWARNINGTEXT;
 			}
 
 
