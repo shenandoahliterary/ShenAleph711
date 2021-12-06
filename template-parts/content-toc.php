@@ -110,6 +110,7 @@ echo <<<URLLINK
 URLLINK;
 }
 					$i++;
+					wp_reset_postdata();
 				endwhile;
 
 
