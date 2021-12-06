@@ -121,7 +121,7 @@ URLLINK;
 				$author_note_url = site_url();
 				//echo "test: $has_author_note_test[0]";
 				echo <<<URLLINK
-<a href="$author_note_url/$has_author_note[$i]/">Author's Note</a><br />
+<a href="$author_note_url/$has_author_note[0]/">Author's Note</a><br />
 URLLINK;
 				?>
 				<span class="author_name"><?php the_author(); ?> </span>
