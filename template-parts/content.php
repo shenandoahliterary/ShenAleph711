@@ -16,6 +16,12 @@
 		if ( is_singular() ) :
 			$custom_fields = get_post_custom();
 			$prize = $custom_fields['prize'];
+			$trigger_warning = $custom_fields['trigger_warning'];
+			if (! empty($trigger_warning)) {
+				echo "<span class='prize'>$trigger_warning[0]</span>";
+			}
+
+
 			if (! empty($prize)) {
 				echo "<span class='prize'><em>$prize[0]</em></span>";
 			}
