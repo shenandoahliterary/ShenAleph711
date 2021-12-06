@@ -19,13 +19,13 @@
 			$trigger_warning = $custom_fields['trigger_warning'];
 			if (! empty($trigger_warning)) {
 				echo <<<TRIGGER
-				<button class="btn btn-warning" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+				<button class="btn btn-outline-warning" type="button" data-toggle="collapse" data-target="#collapseTrigger" aria-expanded="false" aria-controls="collapseExample">
 				Trigger Warning
 			  </button>
 TRIGGER;
 				echo "<span class='prize'></span>";
 				echo <<<TRIGGERWARNINGTEXT
-				<div class="collapse" id="collapseExample">
+				<div class="collapse" id="collapseTrigger">
 				<div class="card card-body">
 				$trigger_warning[0];
 				</div>
