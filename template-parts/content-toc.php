@@ -99,6 +99,7 @@ $upload_path =  $uploads['baseurl'];
 
 					<?php
 //check for author's note
+/*
 $custom_fields = get_post_custom();
 $has_author_note = $custom_fields['has_author_note'];
 
@@ -111,8 +112,8 @@ if (! empty($has_author_note)) {
 echo <<<URLLINK
 <a href="$author_note_url/$has_author_note[$i]/">Author's Note</a><br />
 URLLINK;
-
-}
+} //end if 
+*/
 
 					$i++;
 					
