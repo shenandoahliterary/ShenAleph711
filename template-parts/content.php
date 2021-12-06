@@ -27,7 +27,7 @@ TRIGGER;
 				echo <<<TRIGGERWARNINGTEXT
 				<div class="collapse" id="collapseTrigger">
 				<div class="card card-body">
-				$trigger_warning[0];
+				$trigger_warning[0]
 				</div>
 </div>
 TRIGGERWARNINGTEXT;
