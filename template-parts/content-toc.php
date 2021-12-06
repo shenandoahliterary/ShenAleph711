@@ -115,8 +115,10 @@ URLLINK;
 					$i++;
 					
 				endwhile;
-
+				$custom_fields_test = get_post_custom();
+				$has_author_note_test = $custom_fields_test['has_author_note'];
 				//print author outside of the loop
+				echo "$has_author_note_test";
 				?>
 				<span class="author_name"><?php the_author(); ?> </span>
 			</p>
