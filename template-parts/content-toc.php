@@ -121,11 +121,13 @@ URLLINK;
 				$custom_fields_test = get_post_custom();
 				$has_author_note_test = $custom_fields_test['has_author_note'];
 				//print author outside of the loop
+				if (! empty($has_author_note)) {
 				$author_note_url = site_url();
 				//echo "test: $has_author_note_test[0]";
 				echo <<<URLLINK
 <a href="$author_note_url/$has_author_note[0]/">Author's Note</a><br />
 URLLINK;
+				}
 				?>
 				<span class="author_name"><?php the_author(); ?> </span>
 			</p>
