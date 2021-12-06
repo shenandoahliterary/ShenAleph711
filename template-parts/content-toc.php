@@ -101,10 +101,12 @@ $upload_path =  $uploads['baseurl'];
 //check for author's note
 $custom_fields = get_post_custom();
 $has_author_note = $custom_fields['has_author_note'];
+
 //echo "$author_note_url/$has_author_note[$i]/ <br />";
 if (! empty($has_author_note)) {
 	$author_note_url = site_url(); 
 //	echo "Author's Note $author_note_url/$has_author_note[$i]/ <br />";
+//	echo "Author's Note $author_note_url/$has_author_note/ <br />";
 echo <<<URLLINK
 <a href="$author_note_url/$has_author_note[$i]/">Author's Note</a><br />
 URLLINK;
@@ -113,7 +115,17 @@ URLLINK;
 					$i++;
 					
 				endwhile;
-
+				$custom_fields = get_post_custom();
+				$has_author_note = $custom_fields['has_author_note'];
+				
+				//echo "$author_note_url/$has_author_note[$i]/ <br />";
+				if (! empty($has_author_note)) {
+					$author_note_url = site_url(); 
+				//	echo "Author's Note $author_note_url/$has_author_note[$i]/ <br />";
+				//	echo "Author's Note $author_note_url/$has_author_note/ <br />";
+				echo <<<URLLINK
+				<a href="$author_note_url/$has_author_note[$i]/">Author's Note</a><br />
+				URLLINK;
 				//print author outside of the loop
 				?>
 				<span class="author_name"><?php the_author(); ?> </span>
