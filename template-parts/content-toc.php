@@ -109,11 +109,12 @@ echo <<<URLLINK
 <a href="$author_note_url/$has_author_note[$i]/">Author's Note</a><br />
 URLLINK;
 }
+
 					$i++;
 					
 				endwhile;
 
-
+				echo "$author_note_url/$has_author_note[$i]/ <br />";
 				//print author outside of the loop
 				?>
 				<span class="author_name"><?php the_author(); ?> </span>
