@@ -80,13 +80,14 @@ $upload_path =  $uploads['baseurl'];
 				);
 				?>
 				<?php
+				//start WP loop
 				$fiction_loop_single = new WP_Query($args);
 
 				$i = 0;
 				//open paragraph for title(s)/author
 				echo "<p>";
 					while ($fiction_loop_single->have_posts()) : 				$fiction_loop_single->the_post();
-					//for each author, print title, title, author
+					//for each author, print title,  author
 					?>
 
 					<a href="<?php the_permalink(); ?>">
@@ -102,7 +103,7 @@ $custom_fields = get_post_custom();
 $has_author_note = $custom_fields['has_author_note'];
 if (! empty($has_author_note)) {
 	$author_note_url = site_url(); 
-//	echo "Author's Note $author_note_url/$has_author_note[$i]/ <br />";
+	echo "Author's Note $author_note_url/$has_author_note[$i]/ <br />";
 echo <<<URLLINK
 <a href="$author_note_url/$has_author_note[$i]/">Author's Note</a><br />
 URLLINK;
