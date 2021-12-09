@@ -13,7 +13,7 @@ $upload_path =  $uploads['baseurl'];
 	?>
 <img  class="img-fluid cover-image m-auto" src="<?php echo $upload_path ?>/2021/11/Sharma-Manjari-art-scaled.jpg">
 </div>
-<p class="text-right art-credit"><em>Uncertainty</em> by Manjari Sharma</p>
+<p class="text-right art-credit"><em>Uncertainty</em><br /> by <a href="https://www.manjarisharma.com/">Manjari Sharma</a></p>
 
 </section>
 
