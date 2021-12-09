@@ -588,7 +588,7 @@ if ($query->have_posts()) :
 			<?php
 			$args = array(
 			  //  'category_name'         => 'feature',
-				'category_name'         => 'Behind the Essay,Conversations',
+				'category_name'         => 'On Craft,Conversations',
 
 			);
 			$category_posts = new WP_Query($args);
